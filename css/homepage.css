@@ -1,0 +1,200 @@
+html {
+    font-size: 14.7px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+    background-color: rgb(73, 88, 101);
+}
+
+
+
+.hero-section {
+    height: 40vh;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+#my-svg {
+    bottom: 20px;
+    right: 5%;
+    height: 75%
+}
+
+#floor {
+    fill: gray;
+}
+
+#about-section h3 {
+    font-size: 22px;
+}
+
+#about-text {
+    font-size: 15px;
+}
+
+
+#about-section,
+#projects-section {
+    scroll-margin-top: 100px;
+}
+
+
+.skills-container svg,
+.worked-with-container svg {
+    width: 20px;
+}
+
+#forearm-and-hand {
+    transform-origin: 10% 24%;
+    transform-box: fill-box;
+    animation: hello 4s ease 0.5s;
+}
+
+.size-up-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    background: rgba(1, 1, 1, 0.862);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#back-to-top {
+    display: none;
+    bottom: 0.7em;
+    right: 0.7em;
+    padding: 0.7em 1em 0.8em 1em;
+    background-color: rgb(1, 1, 1, 0.85);
+}
+
+
+img {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    filter: brightness(95%);
+}
+
+
+@keyframes hello {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    15% {
+        transform: rotateZ(-130deg);
+    }
+
+    25% {
+        transform: rotateZ(-90deg);
+    }
+
+    40% {
+        transform: rotateZ(-130deg);
+    }
+
+    45% {
+        transform: rotateZ(-130deg);
+    }
+
+    60% {
+        transform: rotateZ(-80deg);
+    }
+
+    75% {
+        transform: rotateZ(-130deg);
+    }
+
+
+    90% {
+        transform: rotateZ(-90deg);
+    }
+
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+
+/* Max-width media queries */
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 31px;
+
+    }
+
+    .hero-section p {
+        font-size: 22px;
+    }
+}
+
+
+/* Max-height media queries */
+
+@media (max-height: 600px) {
+    .hero-section {
+        height: 90vh;
+    }
+
+}
+
+
+
+/* Min-width media queries */
+
+@media (min-width: 380px) {
+    #my-svg {
+        bottom: 25px;
+        right: 12%;
+        height: 80%;
+    }
+
+}
+
+
+@media (min-width: 576px) {
+    #back-to-top {
+        bottom: 2em;
+        right: 2.2em;
+        padding: 1.1em 1.6em 1.3em 1.6em;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .hero-section {
+        height: 60vh;
+
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .hero-section {
+        height: 70vh;
+
+    }
+}

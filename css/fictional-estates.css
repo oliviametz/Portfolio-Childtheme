@@ -1,0 +1,301 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbar-brand {
+    max-width: 270px;
+}
+
+.nav-item .active,
+footer a {
+    color: #dacea1 !important;
+    font-weight: 500;
+}
+
+.nav-item a:hover {
+    color: #dacea1 !important;
+}
+
+.carousel-inner {
+    height: 30vh;
+}
+
+.underline-gold {
+    position: relative;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.underline-gold::after {
+    content: "";
+    border-radius: 50px;
+    position: absolute;
+    left: 20%;
+    bottom: 10px;
+    width: 60%;
+    height: 2px;
+    background-color: #D0BD7D;
+}
+
+
+.property-features svg {
+    height: 22px;
+    fill: #c0a85b;
+}
+
+.svg-container {
+    width: 28px;
+}
+
+
+.type-btn:hover {
+    background-color: #c0a85b;
+    border-color: #c0a85b;
+}
+
+.btn-active {
+    background-color: #c0a85b;
+    border-color: #c0a85b;
+}
+
+#search-by {
+    width: 75%;
+}
+
+.show-nearby {
+    font-size: 18px;
+}
+
+#search-by:focus {
+    border-color: #DEE2E6;
+    box-shadow: none;
+}
+
+
+/* Archive Styles */
+
+.archive-card p {
+    font-size: 13.5px;
+}
+
+.zoom {
+    transition: transform 0.5s ease;
+}
+
+.archive-card:hover .zoom {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Map Styles */
+
+#map-container {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+}
+
+.quota-message-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 90px;
+}
+
+#estate-marker .RIFvHW-maps-pin-view-background {
+    fill: #c3aa57;
+}
+
+#estate-marker .KWCFZI-maps-pin-view-default-glyph,
+#estate-marker .RIFJN-maps-pin-view-border {
+    fill: #9b833e;
+}
+
+
+.gm-style-iw {
+    max-height: max-content !important;
+    min-width: 230px !important;
+}
+
+
+.gm-style-iw button {
+    max-height: max-content !important;
+
+}
+
+.gm-style-iw-d {
+    max-height: max-content !important;
+}
+
+.gm-style-iw-chr {
+    height: 0px !important;
+}
+
+.place-details {
+    margin-left: 5px;
+    padding-top: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.place-details p {
+    font-size: 17px;
+    font-weight: 400;
+    padding-right: 30px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.place-img-container {
+    position: relative;
+    width: 200px;
+    height: 105px;
+}
+
+.place-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.attribution-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(241, 241, 241, 0.771);
+    display: flex;
+}
+
+.attribution-label p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.attribution-label a {
+    font-size: 10px;
+    color: black;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+@supports (-moz-appearance: none) {
+    .gm-style-iw button {
+        margin-right: -14px !important;
+    }
+
+}
+
+
+/* Max-width media queries */
+
+@media (max-width: 360px) {
+
+    html {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .place-details p {
+        padding-right: 50px;
+    }
+
+    .type-btn {
+        flex: 1;
+    }
+
+    #search-by {
+        width: 95%;
+    }
+
+
+    .quota-message-overlay {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .type-btn {
+        width: 48%;
+    }
+
+
+
+}
+
+
+/* Max-height media queries */
+
+@media (max-height: 600px) {
+
+    .carousel-inner {
+        height: 75vh;
+    }
+
+    #map-container {
+        height: 75vh;
+    }
+}
+
+
+
+
+/* Min-width media queries */
+
+
+
+@media (min-width: 992px) {
+
+    .carousel-inner {
+        height: 40vh;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .carousel-inner {
+        height: 65vh;
+    }
+
+    #map-container {
+        height: 65vh;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    .carousel-inner {
+        height: 70vh;
+    }
+
+    #map-container {
+        height: 70vh;
+    }
+
+}

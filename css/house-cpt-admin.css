@@ -1,0 +1,30 @@
+#house-features {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#house-features div {
+    margin-right: 20px;
+}
+
+.gallery-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.gallery-img {
+    height: 60px;
+}
+
+
+
+#house-images-container {
+    display: flex;
+    margin: 15px 0;
+}
+
+.remove-image {
+    margin-left: 5px;
+}

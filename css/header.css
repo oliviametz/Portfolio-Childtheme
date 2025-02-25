@@ -1,0 +1,12 @@
+#navigation {
+    background-color: rgba(1, 1, 1, 0.862);
+}
+
+#navigation a {
+    display: inline-block;
+    transition: transform 0.1s linear;
+}
+
+#navigation a:hover {
+    transform: scale(1.03);
+}
