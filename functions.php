@@ -94,9 +94,6 @@ add_action('wp_enqueue_scripts', 'enqueue_bootstrap', 10);
 
 
 
-
-
-
 function enqueue_frontend_styles()
 {
 
@@ -140,7 +137,7 @@ add_action('wp_enqueue_scripts', 'enqueue_frontend_styles');
 
 
 
-function enqueue_house_cpt_admin_styles()
+function enqueue_house_cpt_admin_files()
 {
     $screen = get_current_screen();
     if ($screen && $screen->post_type === 'house') {
@@ -160,7 +157,7 @@ function enqueue_house_cpt_admin_styles()
         );
     }
 }
-add_action('admin_enqueue_scripts', 'enqueue_house_cpt_admin_styles');
+add_action('admin_enqueue_scripts', 'enqueue_house_cpt_admin_files');
 
 
 
@@ -439,7 +436,7 @@ function save_house_cpt_meta_boxes_data($post_id)
         'garden_size' => 'Garten in qm',
     ];
 
-    // Sanitize and save the number of rooms. Ensure it's a float.
+    // Sanitize and save the house features. Ensure it's a float.
 
     foreach ($house_features as $key => $label) {
         if (isset($_POST[$key])) {
